@@ -1,6 +1,22 @@
 {
-    "Index": {
-      "title": "Hallo dunia!"
-    }
+  "Index": {
+    "title": "Halo dunia!",
+    "description": "Ini adalah deskripsi dari judul halo dunia."
+  },
+  "PersonDetails": {
+    "name": "Ali Asghar Gill",
+    "profession": "Insinyur Perangkat Lunak",
+    "company": "Enigmatix Pvt. Ltd.",
+    "description": "Ali mengkhususkan diri dalam mengembangkan sistem backend yang dapat diskalakan dan suka menjelajahi teknologi baru."
+  },
+  "NotFoundPage": {
+    "title": "Tidak Ditemukan",
+    "description": "Oops! Ada yang salah, Halaman yang Anda cari tidak ditemukan."
+  },
+  "Navigation": {
+    "home": "Beranda"
+  },
+  "Footer": {
+    "copyright": "Hak Cipta © 2024. Seluruh hak cipta."
   }
-  
+}

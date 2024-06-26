@@ -1,5 +1,22 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
+  "Index": {
+    "title": "Hello world!",
+    "description": "This is description of hello world heading."
+  },
+  "PersonDetails": {
+    "name": "Ali Asghar Gill",
+    "profession": "Software Engineer",
+    "company": "Enigmatix Pvt. Ltd.",
+    "description": "Alice specializes in developing scalable frontend systems and loves exploring new technologies."
+  },
+  "NotFoundPage": {
+    "title": "Not Found",
+    "description": "Oops! Something went wrong, Page you are looking for is not found."
+  },
+  "Navigation": {
+    "home": "Home"
+  },
+  "Footer": {
+    "copyright": "Copyright © 2024. All rights reserved."
   }
+}

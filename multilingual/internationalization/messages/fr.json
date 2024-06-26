@@ -1,6 +1,22 @@
 {
-    "Index": {
-      "title": "Bonjour le monde!"
-    }
+  "Index": {
+    "title": "Bonjour le monde!",
+    "description": "Voici la description du titre 'Bonjour le monde'."
+  },
+  "PersonDetails": {
+    "name": "Ali Asghar Gill",
+    "profession": "Ingénieur logiciel",
+    "company": "Enigmatix Pvt. Ltd.",
+    "description": "Ali est spécialisé dans le développement de systèmes backend évolutifs et adore explorer de nouvelles technologies."
+  },
+  "NotFoundPage": {
+    "title": "Non trouvé",
+    "description": "Oups! Quelque chose s'est mal passé, la page que vous recherchez est introuvable."
+  },
+  "Navigation": {
+    "home": "Accueil"
+  },
+  "Footer": {
+    "copyright": "Droits d'auteur © 2024. Tous droits réservés."
   }
-  
+}

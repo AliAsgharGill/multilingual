@@ -1,6 +1,22 @@
 {
-    "Index": {
-      "title": "Hallo Welt!"
-    }
+  "Index": {
+    "title": "Hallo Welt!",
+    "description": "Dies ist die Beschreibung der Hallo Welt Überschrift."
+  },
+  "PersonDetails": {
+    "name": "Ali Asghar Gill",
+    "profession": "Software-Ingenieur",
+    "company": "Enigmatix GmbH",
+    "description": "Alice spezialisiert sich auf die Entwicklung skalierbarer Backend-Systeme und liebt es, neue Technologien zu erforschen."
+  },
+  "NotFoundPage": {
+    "title": "Nicht gefunden",
+    "description": "Hoppla! Etwas ist schief gelaufen, die Seite, die Sie suchen, wurde nicht gefunden."
+  },
+  "Navigation": {
+    "home": "Startseite"
+  },
+  "Footer": {
+    "copyright": "Urheberrecht © 2024. Alle Rechte vorbehalten."
   }
-  
+}
