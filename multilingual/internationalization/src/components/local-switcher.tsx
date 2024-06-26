@@ -1,22 +1,34 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React, { ChangeEvent } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { MdLanguage } from "react-icons/md";
 
 const LocalSwitcher = () => {
   const router = useRouter();
+  const pathname = usePathname();
+  const [locale, setLocale] = useState("en");
+
+  useEffect(() => {
+    const pathSegments = pathname.split("/");
+    const currentLocale = pathSegments[1] || "en";
+    setLocale(currentLocale);
+  }, [pathname]);
+
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    // console.log(e.target.value);
     const nextLocale = e.target.value;
-    router.replace(`/${nextLocale}`)    ;
+    router.replace(`/${nextLocale}`);
   };
+
   return (
-    <>
-      <div className="space-x-2 border-2 rounded ">
+    <div className="flex items-center justify-center space-x-2 border-2 rounded">
+      <div className="flex items-center justify-around space-x-2">
+        <MdLanguage className="text-2xl" />
         <select
-          name=""
+          name="locale"
           className="bg-transparent py-2"
           onChange={onSelectChange}
-          id=""
+          value={locale}
+          id="locale-select"
         >
           <option value="en">English</option>
           <option value="ar">Arabic</option>
@@ -29,7 +41,7 @@ const LocalSwitcher = () => {
           <option value="ur">Urdu</option>
         </select>
       </div>
-    </>
+    </div>
   );
 };
 

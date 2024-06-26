@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Link from "next/link";
 import LocalSwitcher from "@/components/local-switcher";
 import { useTranslations } from "next-intl";
+import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-around">
           <Link href={"/"}>{t("home")}</Link>
           <LocalSwitcher />
         </nav>
@@ -35,11 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col mx-10 ">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        {/* <Navbar /> */}
+        <div className="flex flex-col mx-10 ">{children}</div>
+        {/* <Header /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
