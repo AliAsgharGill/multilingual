@@ -1,5 +1,7 @@
 "use client";
+import Header from "@/components/header";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -8,7 +10,9 @@ export default function Index() {
   const t2 = useTranslations("PersonDetails");
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      {/* <Header /> */}
+      <Navbar />
       <div className="p-10 flex flex-col justify-center items-center gap-4 ">
         <div
           id="card"

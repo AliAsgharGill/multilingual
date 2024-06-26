@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React, { useTransition } from "react";
 
-const Header = () => {
+const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
@@ -15,4 +15,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;
